@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historial de Juegos</title>
+</head>
+<body>
+
+<h1>Historial de Juegos</h1>
+<ul>
+    {% for game in games %}
+    <li>{{ game.token }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+
+<h1>Bienvenido a TicTacJango</h1>
+
+<p>Hola, {{ request.user.username }}</p>
+
+<!-- Enlace para cerrar sesión -->
+<a href="{% url 'logout' %}">Cerrar sesión</a>
+
+<!-- Enlace para crear un nuevo juego -->
+<a href="{% url 'create_game' %}">Crear nuevo juego</a>
+
+<!-- Enlace para ver el historial de partidas -->
+<a href="{% url 'game_history' %}">Ver mi historial de partidas</a>
+
+</body>
+</html>
